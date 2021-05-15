@@ -1,0 +1,20 @@
+@font-face {
+    font-family: FinSerifDisplay-Italic;
+    src: url(../../Fuentes/FinSerifDisplay-Italic.ttf);
+}
+@font-face {
+    font-family: big_noodle_titling;
+    src: url(../../Fuentes/big_noodle_titling.ttf);
+}
+@font-face {
+    font-family: Whitin;
+    src: url(../../../Fuentes/Whitin-CondensedBlack.otf);
+}
+@font-face {
+    font-family: KeepCalm;
+    src: url(../../../Fuentes/KeepCalm-Medium.ttf);
+}
+
+$fuente-menu: big_noodle_titling;
+$fuente-tiutlo: Whitin;
+$fuente-texto: KeepCalm;

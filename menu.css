@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {padding-top: 20vh}
+.menu_bar {display: none;}
+header {
+    width: 100%;
+    z-index: 1000;
+    position:fixed;
+    top:0;
+    height: max-content;
+    background: linear-gradient(135deg, rgba(59,55,85,1) 13%, rgba(157,66,66,1) 41%, rgba(154,7,7,1) 70%);
+}
+header nav {
+    z-index: 10000;
+    width:100%;
+ 
+}
+header nav ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+#logo {width: 20vw; margin-right: 10%;}
+#logo:hover {background: none;}
+header nav ul li .boton {padding-top: 5vh; padding-bottom: 5vh;}
+
+header nav ul li {
+    display:inline-block;
+    position: relative;
+    font-size: 5vh;
+}
+
+header nav ul li:hover {
+    background: rgba(38, 37, 39, 0.281);
+
+}
+header nav ul li a:hover {
+    text-decoration: none;
+    color:white;
+}
+
+
+header nav ul li .hijo {
+    display: none;
+    background: rgba(157,66,66,1);
+    position: absolute;
+  
+    padding-left: 0;
+    width: 120%;
+    min-width: max-content;
+    z-index: 1000;
+}
+header nav ul li .hijo li{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    font-size: 4vh;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.575);
+}
+
+header nav ul li .hijo li a {
+    display: block;
+    padding: 2px
+}
+
+header nav ul li .hijo li a span {
+    float: right;
+    position: relative;
+    top: 3px;
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+header nav ul li .caret {
+    position: relative;
+    top: 3px;
+    margin-right: 0;
+    margin-left: 12px;
+}
+
+header nav ul li:hover .hijo{
+    display:block;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 50%;
+    display: block;
+    text-decoration: none ;
+    padding: 20px;
+}
+header nav ul li a span {
+    margin-right: 5px;
+}
+
+@media screen and (max-width:1200px) {
+    header nav ul {padding-left: 0vw ;}
+    #logo {margin-right: 2vw; width: 20%; height: auto; display: inline-block;}
+    header nav ul li .boton {padding: 2vw; min-height: 100%; padding-top: 6vh; padding-bottom: 6vh;}
+    header nav ul li { font-size: 4vh;}
+} 
+
+@media screen and (max-width:700px) and (min-width:551px) {
+    header nav ul {padding-left: 0vw ;}
+    #logo {
+        margin-right: 2vw; 
+        width: 25%; 
+        height: auto; 
+        display: inline-block;}
+    header nav ul li .boton {
+        padding: 2vw; 
+        min-height: 100%; 
+        padding-top: 6vh; 
+        padding-bottom: 6vh;}
+    header nav ul li { font-size: 3vh;}
+}
+
+@media screen and (max-width:550px) {
+    body {padding-top: 20vh;}
+    
+    .menu_bar {
+        display:block;
+        width: 100%;
+        height: max-content;
+        position: fixed;
+        top:0;
+        background: linear-gradient(135deg, rgba(59,55,85,1) 13%, rgba(157,66,66,1) 41%, rgba(154,7,7,1) 70%);
+        min-height: 10vh;
+        
+    }
+    .menu_bar a { max-height: 100%; padding: 1vw; z-index: 10001; }
+    .menu_bar a img {max-height: fit-content;}
+    .menu_bar .btn_menu #armaSecretaLogo {margin-right: 8%;margin-bottom: 1vh;width: 30%; height: auto; display: inline-block;}
+    .menu_bar .btn_menu{
+        display: block;
+        color: #fff;
+        overflow: hidden;
+        font-size: 6vh;
+        font-weight: bold;
+        text-decoration: none;
+        margin-bottom: 1vh;
+    }
+    .menu_bar span {
+        float:right;
+        margin-top: 2%;
+        margin-right: 2%;
+        font-size: 8vh;
+    }
+    header nav {
+        width: 80%;
+        height: 80%;
+        position: fixed;
+        right: 100%;
+        margin: 0;
+        margin-top: 13vh;
+        overflow:scroll;
+        background:rgba(157,66,66,1);
+        z-index: 10000;
+    }
+    #logo {display: none;}
+    header nav ul {
+        padding-left: 0;
+    }
+
+    header nav ul li {
+        display:block;
+        border-bottom:  1px solid rgba(255, 255, 255, 0.575);
+    }
+
+    header nav ul li .boton {
+        min-height: max-content;
+    }
+
+    header nav ul li:hover .hijo {
+        display: none;
+    }
+
+    header nav ul li a {
+        display: block;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        font-size: 3vh;
+    }
+
+    header nav ul li .hijo {
+    display: none;
+    background: rgb(212, 73, 73);
+    position: relative;
+    padding-left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+header nav ul li .hijo li a {
+    margin-left: 20px;
+}
+
+header nav ul li .caret {
+    float: right;
+}
+
+}
+
+/**
+footer {height: max-content; width: 100%; background: rgba(59,55,85,1); background: linear-gradient(317deg, rgba(59,55,85,1) 14%, rgba(157,66,66,1) 57%, rgba(154,7,7,1) 100%, rgba(154,7,7,1) 100%); margin: 0;}
+#pieDePagina {display: flex; justify-content: space-around;}
+#pieDePagina div { padding-bottom: 2vh;padding-top: 2vh; margin:0; display: flex; justify-content: center; align-items: center;}
+#pieDePagina div img {width: auto; height: 4vh;}
+#pieDePagina div p {display: inline-block;  max-width: max-content; color: lavenderblush; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-left: 1vh; margin-bottom: 0 ; margin-top: 0;font-size: 3vh;}
+**/
+
+
+@keyframes animacionLogo {
+    0% {opacity: 0%;transform: translatex(-100%)}
+    65% {transform:translateX(0px);}
+    100% {opacity: 100%;}
+    }
+     
+#armaSecretaLogo { animation: animacionLogo 3s; width: 100%; height: auto; grid-area: "logo";}

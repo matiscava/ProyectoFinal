@@ -1,0 +1,75 @@
+.quienesSomos {/**BLOQUE 1*/
+    margin: 4px;
+    .subtitulo {
+        font-size: $tamanoTitulo;
+    }
+    &__section {
+        padding: 1.5rem;
+        padding-top: 3vh;
+        background-color: $color-cuadro;
+        width: 92%;
+        margin: 0 auto;
+        height: max-content;
+    }
+    &__subtitulo {
+        font-family: 'Ubuntu', sans-serif;
+        color: $color-subtitulo;    
+        font-size: $tamanoSubtitulo;
+        inline-size: 2px;
+    }
+    &__texto {
+        font-family: 'Quicksand', sans-serif;
+        font-size: $tamanoTexto;
+        font-weight: 700;
+        color: cornflowerblue;
+    }
+    &__nombre {
+        font-family: 'Ubuntu', sans-serif;
+        color: $color-subtitulo;  
+        font-size: $tamanoSubtitulo*0.85;
+    }
+    &__retrato {
+        float: left; 
+        margin-right:10px;
+        margin-bottom: 10px;
+        width: 10rem;
+        height: auto;
+    }
+
+}
+@media screen and (max-width:1000px) and (min-width:700px) {
+    .quienesSomos {
+        .subtitulo {font-size: $tamanoSubtitulo*0.75;}
+        &__subtitulo{
+            font-size: $tamanoSubtitulo*0.75;
+        }
+        &__texto {
+            font-size: $tamanoTexto*0.75 ;
+        }
+        &__nombre {
+            font-size: $tamanoSubtitulo*0.70;
+        }
+        &__retrato {
+            width: 8rem;
+        }
+    }
+}
+
+
+@media screen and (max-width:699px) and (min-width:0px) {
+    .quienesSomos {
+        .subtitulo {font-size: $tamanoSubtitulo*0.75;}
+        &__subtitulo{
+            font-size: $tamanoSubtitulo*0.6;
+        }
+        &__texto {
+            font-size: $tamanoTexto*0.6 ;
+        }
+        &__nombre {
+            font-size: $tamanoSubtitulo*0.5;
+        }
+        &__retrato {
+            width: 6rem;
+        }
+    }
+}

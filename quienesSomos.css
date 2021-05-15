@@ -1,0 +1,26 @@
+.quienesSomos1 {
+    text-decoration:underline;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(172, 32, 32);
+    margin-left: 12px;
+    font-size: 36px;
+}
+.quienesSomos2 {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(187, 87, 87);    
+    font-size: 28px;
+    inline-size: 2px;
+}
+.quienesSomos3 {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(216, 118, 118);  
+    font-size: 22px;
+}
+.quienesSomosP { 
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: cornflowerblue;
+}
+section { padding-left: 1%; padding-bottom: 2%; padding-right: 1%;background-color: rgba(196, 187, 147, 0.288); }
+.retrato {float: left; margin-right:10px; margin-bottom: 10px;}

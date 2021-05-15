@@ -1,0 +1,45 @@
+.chat { /*BLOQUE 7*/
+    z-index: 800;
+    position: fixed; 
+    bottom: 10%; 
+    right: 5%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    height: 15%; 
+    width: 25%;
+    &__chica {
+        order: 0;
+        width: 30%;
+        justify-self: right;
+        &:hover ~ .chat__globo {
+            transform: scalex(1);
+            visibility: visible;
+        }
+    }
+
+    &__imgChica {
+        width: 100%; height: auto;
+        
+    }
+    &__globo {
+        width: 60%;
+        height: 50%;
+        transform: scalex(0);
+        transition: all ease .3s;
+    }
+}
+@media screen and (max-width:550px) {
+    .chat {
+        bottom: 10%;
+        height: 15%; 
+        width: 40%;
+        &__chica { 
+            width: 35%;
+        }
+         &__globo {
+         height: 40%;
+         width: 65;
+         }
+    }
+}

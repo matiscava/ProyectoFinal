@@ -1,0 +1,88 @@
+
+@media only screen and (min-width: 320px) {
+    main { 
+    height: 100%; width: 70%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 1vh;
+    }
+p {
+    font-family: sans-serif; color: rgb(129, 38, 22); font-size: medium;
+}
+#Titulo { font-size: 5vh ; font-family: 'Anton', sans-serif; font-style: italic; color: brown; grid-area: Titulo; justify-self:left; text-decoration-line: underline;}
+#video{ grid-area: video1;width:100%; height:max-content;}
+#tituloVideo {grid-area: tituloVideo1; align-self: center;}
+#descripcion {grid-area: descripcion1; align-self: center; text-align: justify;}
+#duracion {grid-area: tiempo1; align-self: center;}
+#video2{ grid-area: video2;width:100%; height:max-content;}
+#tituloVideo2 {grid-area: tituloVideo2; align-self: center;}
+#descripcion2 {grid-area: descripcion2; align-self: center; text-align: justify;}
+#duracion2 {grid-area: tiempo2; align-self: center;} 
+#barra {  grid-area: barra;  }
+
+}
+@media only screen and (min-width: 768px) {
+
+    main { 
+    height: 100%; width: 70%;
+    display: grid;
+    grid-template-areas: "Titulo vacio vacio"
+                         "video1 tituloVideo1 tiempo1"
+                         "video1 descripcion1 descripcion1"
+                         "barra barra barra"
+                         "video2 tituloVideo2 tiempo2"
+                         "video2 descripcion2 descripcion2";    
+    grid-template-columns: max-content 20vw 20vw; 
+    grid-template-rows: max-content max-content;
+    grid-row-gap: 2vh;
+    grid-column-gap: 1vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 1vh;
+    }
+    #barra {  grid-area: barra;  }
+p {
+    font-family: sans-serif; color: rgb(129, 38, 22); font-size: medium;
+}
+#Titulo { font-size: 5vh ; font-family: 'Anton', sans-serif; font-style: italic; color: brown; grid-area: Titulo; justify-self:left; text-decoration-line: underline;}
+#video{ grid-area: video1;align-self: center;width:100%; height:max-content;}
+#tituloVideo {grid-area: tituloVideo1; align-self: center;}
+#descripcion {grid-area: descripcion1; align-self: center; text-align: justify;}
+#duracion {grid-area: tiempo1; align-self: center; justify-self: right;}
+#video2{ grid-area: video2;align-self: center;width:100%; height:max-content;}
+#tituloVideo2 {grid-area: tituloVideo2; align-self: center;}
+#descripcion2 {grid-area: descripcion2; align-self: center; text-align: justify;}
+#duracion2 {grid-area: tiempo2; align-self: center;justify-self: right;} 
+
+}
+@media only screen and (min-width: 1024px) {
+
+main { 
+height: 100%; width: 70%;
+display: grid;
+grid-template-areas: "Titulo vacio vacio vacio"
+                 "video1 tituloVideo1 descripcion1 tiempo1"
+                 "barra barra barra"
+                 "video2 tituloVideo2 descripcion2 tiempo2";    
+grid-template-columns: max-content 20vw 20vw max-content; 
+grid-template-rows: max-content max-content;
+grid-row-gap: 3vh;
+grid-column-gap: 2vw;
+margin-left: 5vw;
+margin-right: 5vw;
+margin-bottom: 1vh;
+}
+p {
+font-family: sans-serif; color: rgb(129, 38, 22); font-size: medium;
+}
+
+#Titulo { font-size: 5vh ; font-family: 'Anton', sans-serif; font-style: italic; color: brown; grid-area: Titulo; justify-self:left; text-decoration-line: underline;}
+#video{ grid-area: video1; width:100%; height:max-content;}
+#tituloVideo {grid-area: tituloVideo1; align-self: center;}
+#descripcion {grid-area: descripcion1; align-self: center; text-align: justify;}
+#duracion {grid-area: tiempo1; align-self: center;}
+#video2{ grid-area: video2; width:100%; height:max-content;}
+#tituloVideo2 {grid-area: tituloVideo2; align-self: center;}
+#descripcion2 {grid-area: descripcion2; align-self: center; text-align: justify;}
+#duracion2 {grid-area: tiempo2; align-self: center;} 
+}

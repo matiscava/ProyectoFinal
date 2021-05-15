@@ -1,0 +1,232 @@
+#menubox {display: none;}
+header {
+    position: absolute;
+    top:0;
+    width: 100%;
+    
+}
+.menu {
+    background: $color-nav;
+    height: $tamanoNav+2px;
+    width: 100%;
+    z-index: 10000;
+    box-shadow: 0 0 10px 10px #00000065 ;
+    &__logo {
+        color: $color-contenidoFooter;
+        font-size: 35px;
+        line-height: $tamanoNav;
+        padding: 0 5%;
+        font-weight: bold;
+    }   
+    &__img {
+        height: $tamanoNav;
+        width: auto;
+        animation: animacionLogo 3s;
+    } 
+    &__secciones {
+        list-style: none;
+        float: right;
+        margin-right: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    &__li {
+        display: inline-block;
+        line-height: $tamanoNav;
+        margin: 0 5px;
+        &:hover .menu__submenu{
+            display: block;
+        }
+    }
+    &__boton {
+        text-decoration: none;
+        color: $color-contenidoFooter;
+        font-size: $tamanoMenu;
+        font-family: $fuente-menu;
+        text-transform: uppercase;
+        padding: 26px 13px;   
+        &:hover, &--activo {
+            background: #52ae94ed;
+            color: #961818;
+            transition: .5s;
+        }    
+    }
+    &__checkbtn {
+        font-size: $tamanoMenu*1.5;
+        color: $color-contenidoFooter;
+        float: right;
+        line-height: $tamanoNav;
+        margin-right: 40px;
+        cursor: pointer;  
+        display: none;
+    }
+    &__submenu {
+        display: none;
+        background: rgba(157,66,66,1);
+        position: absolute;
+        padding-left: 0;
+        width: 20%;
+        min-width: max-content;
+        z-index: 1000;
+    }
+    &__subLi{
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.575);
+        height: max-content;
+        margin: 0;
+        line-height: $tamanoSubmenu + 5px;
+    }
+    &__submenuBtn {
+        text-decoration: none;
+        color: $color-contenidoFooter;
+        display: block;
+        padding: 2px;
+        font-size: $tamanoSubmenu;
+        &:hover {
+            background: rgba(38, 37, 39, 0.281);
+            color: rgb(139, 125, 125);
+            transition: .5s;
+        }
+    }
+    &__submenuSpan {
+        float: right;
+        position: relative;
+        align-self: center;
+        top: 3px;
+        margin-right: 0;
+        margin-left: 5px;
+    }
+    &__span {
+        position: relative;
+        top: 3px;
+        margin-left: 12px;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .menu {
+        &__boton {
+            font-size: $tamanoMenu*0.8;
+            padding: 29px 13px;
+        }
+        &__submenuBtn {
+            font-size: $tamanoSubmenu*0.8;
+        }
+    }
+}
+@media (max-width: 960px) {
+    .menu {
+        &__boton {
+            font-size: $tamanoMenu*0.6;
+            padding: 32px 13px;
+        }
+        &__submenuBtn {
+            font-size: $tamanoSubmenu*0.6;
+        }
+    }
+}
+
+ @media (max-width: 860px) {
+     .menu {
+         &__secciones {
+             margin-left: 0;
+             padding-left: 0;
+         }
+         &__logo {
+             padding-right: 0;
+             padding-left: 2%;
+         }
+         &__boton {
+             font-size: $tamanoMenu*0.5;
+             padding: 33px 13px;
+         }
+        &__submenuBtn {
+             font-size: $tamanoSubmenu*0.4;
+         }
+     }
+}
+
+@media (max-width: 780px) {
+    .menu{
+        &__checkbtn {
+            display: block;
+        }
+        &__secciones {
+            position: absolute;
+            width: 80%;
+            height: max-content;
+            background: $color-nav;
+            left: -100%;
+            top: 82px;
+            text-align: left;
+            transition: all .5s;
+            padding: 0;
+            z-index: 1000;
+        }
+            
+        &__li {
+            display: block;
+            border-bottom: 1px white solid;
+            margin: 0;
+            line-height: $tamanoMenu*0.5;
+            &:hover ~ .menu__submenu {
+                display: block;
+                width: 80%;
+                transition: 0.5s;
+            }
+        }
+
+        &__boton {
+            font-size: $tamanoMenu*0.5;
+            padding: 10px;
+            min-width: 100%;
+            display: block;
+            &:hover {
+                background: none;
+                color: #030303;
+            }
+        }
+        &__span {
+            float: right;
+            top: 50%;
+            }
+        &__submenu {
+            background: rgb(180, 68, 87);
+            width: 100%;
+            min-width: max-content;
+            position: relative;
+        }
+        &__submenuBtn {
+            display: block;
+            font-size: $tamanoSubmenu*0.5;
+        }
+        &__submenuSpan {
+            top: 50%;
+        }
+        &__subLi{
+            border-bottom: $color-contenidoFooter 1px solid;
+            &--ultimo {
+            border: 0;
+            }
+        }
+    }
+    #menubox:checked ~ .menu__secciones {
+        left:0%;    
+    }
+}
+
+@media (max-width: 390px) {
+    .menu{
+        &__img {
+            height: $tamanoNav*0.8;
+            width: auto;
+        }
+    }
+}
+@keyframes animacionLogo {
+    0% {opacity: 0%;transform: translatex(-100%)}
+    65% {transform:translateX(0px);}
+    100% {opacity: 100%;}
+    }

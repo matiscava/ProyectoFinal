@@ -1,0 +1,33 @@
+#construccion{
+    padding-top: 15vh;
+    .head {
+        height: max-content;
+        &__link {
+            margin-left: 4vw;
+            width: 20vw;
+            height: auto;
+        }
+        &__logo {
+            width: 20vw;
+            height: auto;
+        }
+    }
+    main {
+
+        img {
+            width: 60%;
+            height: auto;
+            margin-left: 20%;
+        }
+        .mensaje{ 
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            p {
+                font-size: $tamanoTexto;
+                color: $color-texto;
+                display: inline-block;
+            }
+    }
+    }
+}

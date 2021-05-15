@@ -1,0 +1,71 @@
+/*VARAIBALES*/
+@import 'variables/colores.scss';
+@import 'variables/mixin.scss';
+@import 'variables/_tamanios';
+@import 'variables/_fuentes';
+/*SECCIONES*/
+
+@import 'secciones/quienesSomos';
+@import 'secciones/footer';
+@import 'secciones/home';
+@import 'secciones/clientes';
+@import 'secciones/chat';
+@import 'secciones/video';
+@import 'secciones/construccion';
+@import 'secciones/menu';
+
+body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    padding-top: 101px;
+    background-color: $color-fondo !important; 
+}
+
+.titulo {
+    margin-left: 5%;
+    font-size: $tamanoTitulo;
+    font-weight: bolder;
+    font-family: $fuente-tiutlo;
+    letter-spacing: 2px;
+    color: $color-titulo;
+}
+.subtitulo {
+    @extend .titulo;
+    font-size: $tamanoSubtitulo;
+}
+.cuestionario {color: $color-subtitulo}
+
+
+
+
+/**
+div {
+    background-color: blue;
+    height: 40vh;
+    ul {
+        list-style: none;
+        margin:0;
+        padding: 0;
+        background-color:red ;
+        height: 20vh;       
+        display: flex;
+        li {
+            font-size: 3vh;
+            color: royalblue;
+            font-family:'Courier New', Courier, monospace ;
+        }
+    }
+    p {
+        font-size: 6vh;
+        color:saddlebrown;
+        background-color: seagreen;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+h1{
+    color:$ColorTitulo;
+}
+h3{ 
+    color:$ColorTitulo;
+}**/

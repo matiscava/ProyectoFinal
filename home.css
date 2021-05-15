@@ -1,0 +1,83 @@
+/**
+main {margin: 2vh}
+.prueba video {
+  width: 100%;
+  height: auto;
+}
+
+main { max-width: 100%; }
+
+aside{
+    background-color: rgba(254, 255, 255, 0.315);
+    border: solid 1px;
+    border-color: rgba(50, 56, 56, 0.582);
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+}
+aside p {
+  font-size: 4vh;
+  font-weight: bolder;
+  font-family: 'Quicksand', sans-serif;
+      font-style: italic;
+      font: bold;
+      color:midnightblue;
+ }
+ 
+ section p {
+   margin-left: 5%;
+   font-size: 15px;
+   font-weight: bolder;
+      font-family: 'Quicksand', sans-serif;
+      font: bold;
+      color:rgb(170, 54, 49);}
+
+ #seccionDos {height: max-content; margin-bottom: 4%; max-width: 100%;}
+ #contenedor{ display: flex; flex-direction:row; justify-content: space-around; min-height: max-content;}
+ .servicios {width: 25%; height: 100%; background-color: rgba(112, 157, 216, 0.411);}
+ .servicios p {margin: 4% ;display: inline-block; width: 80%;}
+ .servicios h2 {margin-left: 4% ; color:olive;}
+ .subtitulo {
+      margin-left: 5%;
+      font-size: 12px;
+      font-weight: bolder;
+      font-family: 'Quicksand', sans-serif;
+      font: bold;
+      color:rgb(170, 54, 49);
+      font-size: 35px;}
+ #serviciosUno {order:1;}
+ #serviciosDos {order:-1}
+ #serviciosTres {order:0}
+ **/
+ 
+ 
+ @media screen and (max-width:880px) {
+   aside {
+     margin-top: 2vh;
+     padding: 2%;
+   }
+     aside p {
+      font-size: 70%; 
+      margin-bottom: 3vh;
+     } 
+     /** .servicios p {font-size: 4px;}
+     .subtitulo {font-size: 8px}
+   .servicios h2 {font-size: 6px; margin-top: 4%;}
+  **/
+  }
+   @media screen and (max-width:500px) {
+    aside {
+      padding: 3%;
+    } 
+    aside p {
+      font-size: 6vh;
+      margin-bottom: 2vh;
+     }
+      
+     main {margin-right: 0;}
+     /**#contenedor {display: block; height: max-content; }
+     .subtitulo {font-size: 6px}
+   .servicios {margin-left: 10%; width: 85%;padding-top: 4%; margin-top: 4%; margin-bottom: 4%;}
+   .servicios p {font-size: 4px;}
+   .servicios h2 {font-size: 6px; margin-top: 2vh;}**/
+   }

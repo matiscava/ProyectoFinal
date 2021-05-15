@@ -1,0 +1,13 @@
+$color-titulo:rgb(211, 198, 197);
+$color-subtitulo: #b7c25a;
+$color-btnCliente: rgb(32, 87, 87);
+$color-texto: #c4dae5;
+$color-cuadro: rgba(112, 157, 216, 0.411);
+$color-contenidoFooter: rgb(255, 238, 238);
+$color-nav: #023047;
+$color-div: #caffbf;
+$color-fondo: #042425;
+@mixin color-footer {
+    background: rgba(59,55,85,1);
+    background: linear-gradient(317deg, rgba(59,55,85,1) 14%, rgba(157,66,66,1) 57%, rgba(154,7,7,1) 100%, rgba(154,7,7,1) 100%);
+}

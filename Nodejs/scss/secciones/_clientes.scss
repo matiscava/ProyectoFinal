@@ -1,0 +1,222 @@
+.botonCLiente { /*BLOQUE 5*/
+    text-decoration: none; 
+    color: rgb(255, 255, 255); 
+    font-size: $tamanoBtnCliente; 
+    background-color: teal; 
+    padding: 1% 2%;
+    border-radius: 0.5em;
+    height: max-content;
+    margin-right: 4%;
+    margin-left: 4%;
+    &:hover {
+        @extend .botonCLiente;
+        color: rgb(189, 226, 226); 
+        background-color: $color-btnCliente; 
+        border-radius: 5px;
+        box-shadow: 0 0 3px 3px rgba(26, 105, 68, 0.5);
+    }
+    &--construccion {
+        width: min-content;
+        padding: 0.4rem;
+        &:hover {
+            padding: 0.4rem;
+        }
+    }
+}
+
+.clientes { /*BLOQUE 6*/
+    display:flex; 
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%; 
+    margin-bottom: 3%;
+
+    &__cuadro {
+            
+            &--dosMundos {
+                @include cuadroCliente (0,dosMundos);
+                //background-image: url("../../Imagenes/banner_dosMundos.jfif");
+            }
+            &--macanas {
+                @include cuadroCliente (2,macanas);
+                //background-image: url("../../Imagenes/banner_macanas.jpg");
+              
+            }
+            &--antiPasto {
+                @include cuadroCliente(1,antipasto);
+               // background-image: url("../../Imagenes/banner_antipasto.jpg");
+            }
+    }
+
+    &__datos {
+        width: 68%;
+        height: 100%; 
+        display: flex; 
+        flex-direction: column;
+    }
+    &__ol {
+        padding-left: 2vw;
+        margin-bottom: 0;
+    }
+    &__logo {
+        height: 100%; 
+        width: 32%; 
+        padding: 2%;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+        &--par{
+            order: 1;
+        }
+    }
+
+    &__imagen {
+        height: 20vh;
+    }
+
+    &__descripcion {
+        background-color: rgba(255, 255, 255, 0.411); 
+        border: rgba(255, 255, 255, 0.747) 2px solid;
+        height: 70%;
+        padding: 2vh 2vw;
+        box-sizing: content-box;
+    }
+
+    &__listado {
+        list-style:disc; 
+        margin-bottom: 2%; 
+        font-size: $tamanoTexto*0.8; 
+        font-family: sans-serif; 
+        color:rgb(56, 7, 7); 
+        font-weight: bold;
+    }
+
+    &__link {
+        height: 30%;    
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 6px;
+        &--par {
+            justify-content: flex-start; 
+        }
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+    .clientes__listado {font-size: $tamanoTexto/1.5;}
+}
+
+@media screen and (max-width:1000px) and (min-width:700px) {
+  .clientes{
+        &__imagen {
+          height: 15vh;
+        }
+        &__listado {
+            font-size: $tamanoTexto/2;
+        }
+    }
+    .botonCLiente {
+        font-size: $tamanoBtnCliente/1.5;
+    }
+}
+@media screen and (max-width:699px) and (min-width:0px) {
+    .clientes {
+        &__imagen {
+        height: 10vh;
+        }  
+        &__logo {
+            width: 50%;
+        }
+        &__listado {
+            font-size: $tamanoTexto/2.2;
+        }
+        &__datos {
+            width: 50%;
+        }
+  }
+  .botonCLiente {
+    font-size: $tamanoBtnCliente/1.5;
+}
+}
+
+.bounceInDown {
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown;
+    animation-delay: 0.5s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    
+    0% {
+        z-index: 0;
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50px, 0);
+    transform: translate3d(0, -50px, 0);
+    }
+    
+    60% {
+    z-index: 500;
+    opacity: 0.5;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+    }
+    
+    75% {
+        opacity: 1;
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+    }
+    
+    90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+    }
+    
+    100% {
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    
+    @keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100px, 0);
+    transform: translate3d(0, -100px, 0);
+    }
+    
+    60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+    }
+    
+    75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+    }
+    
+    90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+    }
+    
+    100% {
+    -webkit-transform: none;
+    transform: none;
+    }
+    } 
