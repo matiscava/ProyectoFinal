@@ -9,11 +9,11 @@
 
 @font-face {
   font-family: Whitin;
-  src: url(../../../Fuentes/Whitin-CondensedBlack.otf); }
+  src: url(../../Fuentes/Whitin-CondensedBlack.otf); }
 
 @font-face {
   font-family: KeepCalm;
-  src: url(../../../Fuentes/KeepCalm-Medium.ttf); }
+  src: url(../../Fuentes/KeepCalm-Medium.ttf); }
 
 /*SECCIONES*/
 .quienesSomos {
@@ -298,7 +298,7 @@ span.icon-cheveron-outline-right {
   h3.subtutilo {
     font-size: 6.4vh; }
   .seccionDos {
-    background-image: url(../../../Imagenes/Serviciosbg2.jpg);
+    background-image: url(../../Imagenes/Serviciosbg2.jpg);
     background-size: cover; }
     .seccionDos__contenedor {
       display: block;
