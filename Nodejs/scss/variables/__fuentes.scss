@@ -14,7 +14,12 @@
     font-family: KeepCalm;
     src: url(../../Fuentes/KeepCalm-Medium.ttf);
 }
+@font-face {
+    font-family: TommyMedium;
+    src: url(../../Fuentes/Tommy_Medium.otf);
+}
 
 $fuente-menu: big_noodle_titling;
 $fuente-tiutlo: Whitin;
 $fuente-texto: KeepCalm;
+$fuente-secundaria: TommyMedium;

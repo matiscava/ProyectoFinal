@@ -1,6 +1,9 @@
+#index {
+
 .titulo,h2.subtitulo {
     display: inline-block;
-    margin-top: 0 !important;
+    margin-top: 0;
+}
 }
 .divisorClientes {
     padding-top: 20px;
@@ -86,7 +89,10 @@ span.icon-cheveron-outline-right {
     padding-top: 10px;
     max-width: 100%;
     background-image: url(../../Imagenes/Clientesfondo.jpeg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     
     &__contenedor {
         display: flex; 
@@ -99,6 +105,7 @@ span.icon-cheveron-outline-right {
     
     &__subtitulo {
         margin-left: 4% ; 
+        font-family: $fuente-secundaria;
         color: $color-subtitulo;
         font-size: $tamanoSubtitulo*0.7;
     }
@@ -130,11 +137,11 @@ span.icon-cheveron-outline-right {
     &__texto {
         margin: 4%;
         display: inline-block; 
-        font-family: 'Quicksand', sans-serif;
+        font-family: $fuente-texto;
         width: 80%;
         color: $color-texto ;
         font-size: $tamanoTexto/1.8;
-        font-weight: bolder;   
+        // font-weight: bolder;   
         text-align:justify ;
     }
 }
@@ -150,10 +157,18 @@ span.icon-cheveron-outline-right {
             padding: 1%;
         }
         &__texto {
-            font-size: $tamanoTexto*0.6;
+            font-size: $tamanoTexto*0.8;
         }
     }
 }
+@media screen and (max-width:1080px) and (min-width:964px) {
+    .seccionUno {
+        &__texto {
+            font-size: $tamanoTexto*0.7;
+        }
+    }
+}
+
 @media screen and (max-width:963px) and (min-width:578px) {
     .seccionDos {
         &__subtitulo {
@@ -161,11 +176,11 @@ span.icon-cheveron-outline-right {
         }
         &__servicios {
             width: 60%;
-        }
+            }
     }
     .seccionUno {
         &__texto {
-            font-size: $tamanoTexto*0.5;
+            font-size: $tamanoTexto*0.6;
         }
     }
     .btnMain {
@@ -183,7 +198,7 @@ span.icon-cheveron-outline-right {
 @media screen and (max-width:812px) and (min-width:578px){
     .seccionUno {
         &__texto {
-            font-size: $tamanoTexto*0.35;
+            font-size: $tamanoTexto*0.5;
         }
     }
     .seccionDos {
@@ -204,6 +219,14 @@ span.icon-cheveron-outline-right {
     }
 }
 
+@media screen and (max-width:699px) and (min-width:578px) {
+    .seccionUno {
+        &__texto {
+            font-size: $tamanoTexto*0.4;
+        }
+    }
+}
+
 @media screen and (max-width:577px) {
     .seccionUno {
         flex-direction: column;
@@ -218,18 +241,26 @@ span.icon-cheveron-outline-right {
             font-size: $tamanoTexto*0.6;
         }
     }
-    h3.subtutilo {
+    h3.subtitulo {
         font-size: $tamanoTitulo*0.8;
+        &--main {
+            color: #310400;
+        }
     }
+
     .seccionDos {
         background-image: url(../../Imagenes/Serviciosbg2.jpg);
         background-size: cover;
         &__contenedor {
             display: block; 
             height: max-content;
-            align-content: center;
+            
         }
-        
+        &__icono {
+            width: 30%;
+            height: 30%;
+            margin-top: 0;
+        }
         &__servicios {
             width: 90%;
             padding-top: 4%; 
@@ -237,9 +268,11 @@ span.icon-cheveron-outline-right {
             margin-left: 5%;
             margin-right: 5%;
             margin-bottom: 4%;
+            // align-items: flex-start;
         }
         &__texto {
-            font-size: $tamanoTexto*0.5;
+            font-size: $tamanoTexto*0.6;
+            text-align: left;
         }
         &__subtitulo {
             font-size: $tamanoSubtitulo*0.75; 

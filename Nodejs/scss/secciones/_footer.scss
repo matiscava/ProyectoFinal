@@ -1,5 +1,5 @@
 footer {
-    height: max-content; 
+    min-height: max-content; 
     width: 100%; 
     background-color: $color-nav;
     margin: 0;
@@ -21,14 +21,7 @@ footer {
         align-items: center;
         text-decoration: none;
         line-height: $tamanoTextoFooter;
-    }
-    &__logo {
-        text-decoration: none;
-        width: auto; 
-        height: $tamanoTextoFooter*1.2;
-        color: $color-contenidoFooter;
-        // line-height: $tamanoTextoFooter*1.2;
-
+       
     }
     &__texto {
         display: inline-block;
@@ -39,8 +32,33 @@ footer {
         margin-bottom: 0 ; 
         margin-top: 0;
         font-size: $tamanoTextoFooter;
+        // &:hover {
+        //     color: lightcoral;
+        // }
+        // &:hover ~ .pieDePagina__logo {
+        //     color: lightcoral ;
+        // }
     }
 
+    &__logo {
+        text-decoration: none;
+        width: auto; 
+        height: $tamanoTextoFooter*1.2;
+        color: $color-contenidoFooter;
+        // &:hover{
+        //     color: lightcoral;
+        // }
+        // &:hover ~ .pieDePagina__texto {
+        //     color: lightcoral;
+        // }
+        // line-height: $tamanoTextoFooter*1.2;
+
+    }
+    &__contenedor:hover {
+        .pieDePagina__logo , .pieDePagina__texto {
+            color: lightcoral;
+        }
+    }
 }
 
 
@@ -60,6 +78,9 @@ footer {
             padding: 4px 8px;
             border: 2px solid lavenderblush;
             border-radius: 50%;
+        }
+        &__contenedor {
+            margin: 2vh;
         }
         &__texto {
             display: none;

@@ -1,5 +1,15 @@
+#conocenos{
+    padding-top: 80px;
+    h1.titulo {
+        margin-left: 5%;
+    }
+    .push {
+        margin-top: auto;
+    }
+}
+
 .quienesSomos {/**BLOQUE 1*/
-    margin: 4px;
+    
     .subtitulo {
         font-size: $tamanoTitulo;
     }
@@ -9,19 +19,41 @@
         background-color: $color-cuadro;
         width: 92%;
         margin: 0 auto;
+        min-height: max-content;
+        &--primera {
+            width: 100%;
+            height: 80vh;
+            padding: 0rem;
+            padding-top: 3vh;
+            background: url(../../../Imagenes/fondo-conocenos2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            
+        }
+    }
+    .push {
+        margin-top: auto;
+    }
+    &__cuadro {
+        width: 100%;
         height: max-content;
+        padding: 1% 5%;
+        align-self: flex-end;
+        background: rgb(119, 119, 119); /* Fallback color */
+        background: rgba(119, 119, 119, 0.37); 
     }
     &__subtitulo {
-        font-family: 'Ubuntu', sans-serif;
+        font-family: $fuente-secundaria;
         color: $color-subtitulo;    
         font-size: $tamanoSubtitulo;
         inline-size: 2px;
     }
     &__texto {
-        font-family: 'Quicksand', sans-serif;
+        font-family: $fuente-texto;
         font-size: $tamanoTexto;
-        font-weight: 700;
-        color: cornflowerblue;
+        color: $color-conocenosTexto;
     }
     &__nombre {
         font-family: 'Ubuntu', sans-serif;
@@ -37,6 +69,88 @@
     }
 
 }
+.personas {
+    padding: 8vh 5vh 10vh 5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.tarjeta {
+    box-sizing: content-box;
+    width: 215px;
+    height: 430px;
+    margin:8px;
+    background-color: $color-persona;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0px 0px 5px 3px rgba(59, 47, 47, 0.589);
+    &__imagen {
+        width: auto;
+        height: 50%;
+        margin-top:15px
+    }
+    &__datos {
+        width: 100%;
+        height: 100%;
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__nombre {
+        font-family: big_noodle_titling;
+        margin-bottom: 4px
+    }
+    &__puesto {
+        font-size: 18px;
+        color: grey;
+        margin-top: 4px;
+        font-family: TommyMedium;
+        text-align: center;
+    } 
+    &__link {
+        width: 100%;
+        text-decoration: none;
+        background-color: $color-nav;
+        color: rgb(6, 10, 15);
+        text-align: center;
+        font-size: 25px;
+        &:hover {
+            color: $color-contenidoFooter;
+            background-color: $color-btnCliente;
+        }
+    }
+    &__listado {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 80%;
+        padding:0;
+        text-decoration: none;
+        list-style: none;
+    }
+    &__li {
+        cursor: pointer;
+        border: 1px solid $color-conocenos;
+        background-color: $color-persona;
+        padding: 5px;
+        border-radius: 100%;
+        height: 100%;
+        line-height: 3.5vh;
+        &:hover {
+            border: 1px solid $color-subtitulo;
+            background-color: $color-conocenos;
+        }
+        
+    }
+    &__ahref {
+        text-decoration: none;
+    }
+}
+
 @media screen and (max-width:1000px) and (min-width:700px) {
     .quienesSomos {
         .subtitulo {font-size: $tamanoSubtitulo*0.75;}

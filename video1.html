@@ -9,19 +9,8 @@
         content="Arma Secreta, Agencia digital, Marketing digital, Programacion, Videos tutoriales, video tutorial, hosting, youtube, wordpress">
     <meta name="description"
         content="Capacitate con nosotros y da tus primeros pasos en el mundo de la programacion web y hosting. Aprende a tener tu propio dominio, a subir tu sitio a la web y editar wordpress.">
-    <title>ARMA SECRETA - AGENCIA DIGITAL | VIDEO; Como actualizar precios en tu Tienda Online</title>
     <link rel="shortcut icon" href="Imagenes/detective.ico">
-    <style>
-        iframe {
-            margin: 5%;
-            width: 90%;
-            min-height: 100%;
-        }
-            p {
-                margin-left: 8vw;
-                margin-right: 8vw;
-            }
-    </style>
+    <title>ARMA SECRETA - AGENCIA DIGITAL | VIDEO; Como actualizar precios en tu Tienda Online</title>
 
     <link rel="stylesheet" href="Nodejs/css/estilo.css">
     <link rel="stylesheet" href="Iconos/fonts.css">
@@ -31,7 +20,7 @@
 
 </head>
 
-<body>
+<body id="video">
   <header>
     <nav class="menu">
       <input type="checkbox" id="menubox">
@@ -39,7 +28,7 @@
         <i class="icon-menu1"></i>
       </label>
       <label class="menu__logo">
-        <a href="#"><img src="Imagenes/logoASblanco.png" alt="Arma secreta" id="armaSecretaLogo"
+        <a href="index.html"><img src="Imagenes/logoASblanco.png" alt="Arma secreta" id="armaSecretaLogo"
             class="menu__img"></a>
       </label>
       <ul class="menu__secciones">
@@ -63,7 +52,8 @@
       </ul>
     </nav>
   </header>
-    <h1 class="titulo">ARMA SECRETA</h1>
+  <div class="menuVideos">
+    <h1 class="titulo">Videos Tutoriales</h1>
     <div class="enlase">
         <ul class="enlase__listado">
             <li class="enlase__boton"><a href="https://www.youtube.com/channel/UCGTNjtjsPvkC7bMTgfrZ0FQ" class="enlase__link"><span class="icon-youtube1 enlase__span"></span><p class="enlase__texto">VISITA NUESTRO CANAL</p></a></li>
@@ -71,12 +61,15 @@
             <li class="enlase__boton"><a href="video2.html" class="enlase__link"><p class="enlase__texto">VER SIGUIENTE VIDEO</p><span class="icon-cheveron-outline-right enlase__span enlase__span--der"></span></a></li>
         </ul>
     </div>
+  </div>
     <h2 class="subtitulo">CAMBIA PRECIOS E INVENTARIO EN MASA - SIN PLUGINS</h2>
+    <div class="videosContenedor">
     <iframe src="https://www.youtube.com/embed/ylHVYKmfAX0" width="650px" height="350px" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <p class="videos__texto">FUNCIONA PARA PRODUCTOS VARIABLES TAMBIÉN!!</p>
     <p class="videos__texto">Modificar precios e inventario de una Tienda Online es una actividad que hay que realizar con frecuencia. No es necesario comprar un plugin para hacerlo ni romperte la cabeza con excel y CSV. Hoy te mostramos un método simple, gratuito y velóz. No te lo pierdas!!</p>
     <p class="videos__texto">Contanos en los comentarios si lograste hacerlo!!</p>
     <p class="videos__texto">07:02</p>
+  </div>
     <div class="chat">
         <div class="chat__chica">
             <a href="contacto.html">
@@ -87,23 +80,29 @@
         </div>
         
         <footer>
-            <div id="pieDePagina" class="pieDePagina">
-        
-              <a href="https://www.instagram.com/armasecretaagenciadigital/?hl=es" id="linkInsta" class="pieDePagina__link">
+          <div id="pieDePagina" class="pieDePagina">
+      
+            <a href="https://www.instagram.com/armasecretaagenciadigital/?hl=es" id="linkInsta" class="pieDePagina__link">
+              <div class="pieDePagina__contenedor">
                 <span class="icon-instagram pieDePagina__logo"></span>
                 <p class="pieDePagina__texto">@armasecreta</p>
-              </a>
-        
-              <a href="https://www.facebook.com/armasecretaagenciadigital" id="linkFacebook" class="pieDePagina__link">
+              </div>
+            </a>
+      
+            <a href="https://www.facebook.com/armasecretaagenciadigital" id="linkFacebook" class="pieDePagina__link">
+              <div class="pieDePagina__contenedor">
                 <span class="icon-facebook2 pieDePagina__logo"></span>
                 <p class="pieDePagina__texto">/armasecreta</p>
-              </a>
-              <a href="https://www.youtube.com/channel/UCGTNjtjsPvkC7bMTgfrZ0FQ" id="linkYoutube" class="pieDePagina__link">
-                <span class="icon-youtube pieDePagina__logo"></span>
+              </div>  
+            </a>
+            <a href="https://www.youtube.com/channel/UCGTNjtjsPvkC7bMTgfrZ0FQ" id="linkYoutube" class="pieDePagina__link">
+              <div class="pieDePagina__contenedor">
+                <span class="pieDePagina__logo icon-youtube"></span>
                 <p class="pieDePagina__texto"> armasecreta</p>
-              </a>
-            </div>
-          </footer>
+              </div>
+            </a>
+          </div>
+        </footer>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
         integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">

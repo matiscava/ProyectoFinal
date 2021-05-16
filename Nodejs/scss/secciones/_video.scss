@@ -1,30 +1,84 @@
-h2.subtitulo {margin-top: 4vh;}
+body#video {
+    padding-top: 80px;
+    // nav.menu{
+    //     animation: animacion2 5s;
+    // }
+    h2.subtitulo {
+        margin-top: 4vh;
+        margin-bottom: 6vh;
+        font-size: $fuente-secundaria;
+    }
+}
+
+.videosTutoriales {
+    padding-bottom: 40px;    
+}
+
+.videosContenedor {
+    background:url(../../../Imagenes/fondo2.jpg);
+    width: 100%;
+    height: max-content;
+    padding: 8px;
+    margin-bottom: 20px;
+    margin-bottom: 40px;
+    iframe{
+        margin: 4%;
+        margin-top: 8px;
+        width: 90%;
+        min-height: 100%;
+    }
+    p {
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+}
+
+.menuVideos {
+    padding-top: 21px;
+    background-color: #2e6455ed;
+    box-shadow: 0 0 10px 10px #00000065 ;
+    //animation: animacionVideo 5s; 
+}
+
 .enlase {
-    border-top: 1px brown solid;
-    border-bottom: 1px brown solid;
-    background-color: white;
+    
+    //border-bottom: 1px brown solid;
+    //background-color: white;
     &__listado {
         list-style: none;
-        margin-left: 7%;
-        margin-right: 7%;
+        margin-left: 5vw;
+        margin-right: 5vw;
         margin-bottom: 0;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         padding: 0;
+        width: fit-content;
+        background-color: $color-contenidoFooter;
+        border-right: 1px solid $color-contenidoFooter;
+        border-left: 1px solid $color-contenidoFooter;
     }
     &__boton {
         min-width: max-content;
         padding: 4px;
+        background-color: #2e6455ed;
+        border-top: 1px solid $color-contenidoFooter;
         &:hover {
             background-color: rgba(0, 139, 139, 0.322);
+        }
+        &--medio {
+            padding-left: 6px;
+            padding-right: 6px;
+            border-left: 1px solid $color-contenidoFooter;
+            border-right: 1px solid $color-contenidoFooter;
+            
         }
     }
     &__link {
         text-decoration: none;
         margin-bottom: 0.5vh;
-        color: brown;
+        color: $color-contenidoFooter;
 
     }
     &__texto {
@@ -50,9 +104,13 @@ h2.subtitulo {margin-top: 4vh;}
     padding: 1.5vw;
     display: flex;
     flex-direction: row;
-    background:$color-cuadro;
+    // background:$color-cuadro;
+    background-image: url(../../../Imagenes/fondo3.jpg);
+    background-repeat: repeat;
     border: rgba(250, 227, 246, 0.582) solid 2px;
-    margin: 4vw;
+    border-left: 0px;
+    border-right: 0px;
+    margin-top: 4vw;
     margin-bottom: 5vh;
     &__youtube {
         width: 40%;
@@ -83,16 +141,18 @@ h2.subtitulo {margin-top: 4vh;}
     &__tituloTexto{
         color:$color-subtitulo; 
         font-size: $tamanoSubtitulo;
+        font-family: $fuente-secundaria;
         
     }
     &__texto{
-        font-family: sans-serif; 
+        font-family: $fuente-texto;
         text-align: justify;
         color: $color-texto; 
         font-size: $tamanoTexto;
     }
     &__contenedorDuracion{
         grid-area: duracion;
+        font-family: $fuente-texto;
         align-self: center;
         justify-self: end;
     }
@@ -138,7 +198,7 @@ h2.subtitulo {margin-top: 4vh;}
         }
     }
 }
-@media screen and (max-width:850px) and (min-width:551px) {
+@media screen and (max-width:850px) and (min-width:0px) {
     .subtitulo{font-size: $tamanoTitulo*0.7;}
     .videos{
         margin-bottom: 5vh;
@@ -184,18 +244,25 @@ h2.subtitulo {margin-top: 4vh;}
         }
 
      }
+     .menuVideos {
+         margin-bottom: 40px;
+     }
      .enlase {
+         margin-left: 5vh;
         &__listado {
             display: block;
             margin-left: 0%;
             margin-right: 0%;
+            width: 95%;
         }
         &__boton {
             padding-left: 7%;
             padding-right: 7%;
+            min-width: max-content;
             &--medio {
-                border-top: 1px brown solid;
-                border-bottom: 1px brown solid;
+                border-left: 0px $color-contenidoFooter;
+                border-right: 0px $color-contenidoFooter;
+
             }
             &:hover {
                 background-color: $color-cuadro;
@@ -203,3 +270,21 @@ h2.subtitulo {margin-top: 4vh;}
         }
     }
 }
+
+@keyframes animacionVideo {
+     0% {transform: translatey(-100px);
+        transform: translateZ(-1000);
+        opacity: 0;
+        }
+     65% {transform: translatey(-100px);
+        transform: translateZ(-1000);
+        opacity: 0;
+        }
+     100% {transform:translatey(0px);
+        transform: translateZ(800);
+        opacity: 1;}     }
+
+        @keyframes animacion2 {
+            0% {transform: translateZ(1000000)}
+            100% {transform: translateZ(1000000)}
+        }

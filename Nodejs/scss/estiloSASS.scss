@@ -29,6 +29,7 @@ body {
     font-family: $fuente-tiutlo;
     letter-spacing: 2px;
     color: $color-titulo;
+
 }
 .subtitulo {
     @extend .titulo;
