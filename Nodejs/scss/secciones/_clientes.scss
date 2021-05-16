@@ -19,6 +19,8 @@
     &--construccion {
         width: min-content;
         padding: 0.4rem;
+        float: none;
+        align-self: flex-start;
         &:hover {
             padding: 0.4rem;
         }

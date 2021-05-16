@@ -49,6 +49,11 @@
         color: $color-subtitulo;    
         font-size: $tamanoSubtitulo;
         inline-size: 2px;
+        &--dos {
+            inline-size: auto;
+            margin-top: 20px;
+            margin-left: 5%;
+        }
     }
     &__texto {
         font-family: $fuente-texto;
@@ -78,8 +83,8 @@
 }
 .tarjeta {
     box-sizing: content-box;
-    width: 215px;
-    height: 430px;
+    width: $anchoTarjeta;
+    height: $altoTarjeta;
     margin:8px;
     background-color: $color-persona;
     display: flex;
@@ -184,6 +189,195 @@
         }
         &__retrato {
             width: 6rem;
+        }
+    }
+}
+
+@media screen and (max-width:750px) and (min-width: 601px){
+    .tarjeta {
+        box-sizing: content-box;
+        width: $anchoTarjeta*0.8;
+        height: $altoTarjeta*0.8;
+        margin:4px;
+        background-color: $color-persona;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        box-shadow: 0px 0px 5px 3px rgba(59, 47, 47, 0.589);
+        &__imagen {
+            width: auto;
+            height: 50%;
+            margin-top:10px
+        }
+        &__datos {
+            width: 100%;
+            height: 100%;
+            margin-top: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__nombre {
+            font-family: big_noodle_titling;
+            margin-bottom: 4px
+        }
+        &__puesto {
+            font-size: 12px;
+            color: grey;
+            margin-top: 4px;
+            font-family: TommyMedium;
+            text-align: center;
+        } 
+        &__link {
+            width: 100%;
+            text-decoration: none;
+            background-color: $color-nav;
+            color: rgb(6, 10, 15);
+            text-align: center;
+            font-size: 20px;
+            &:hover {
+                color: $color-contenidoFooter;
+                background-color: $color-btnCliente;
+            }
+        }
+        &__listado {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 80%;
+            padding:0;
+            text-decoration: none;
+            list-style: none;
+        }
+        &__li {
+            cursor: pointer;
+            border: 1px solid $color-conocenos;
+            background-color: $color-persona;
+            padding: 4px;
+            border-radius: 100%;
+            height: 100%;
+            line-height: 3vh;
+            &:hover {
+                border: 1px solid $color-subtitulo;
+                background-color: $color-conocenos;
+            }
+            
+        }
+        &__ahref {
+            text-decoration: none;
+        }
+    }
+    
+}
+@media screen and (max-width:600px) and (min-width:460px){
+    .personas {
+        flex-direction: column;
+        align-items: center ;
+    }
+    .tarjeta {
+        width: $altoTarjeta;
+        height: $anchoTarjeta;
+        margin:8px;
+        flex-direction: row;
+        &__imagen {
+            width: auto;
+            height: 94%;
+            margin:2%;
+        }
+        &__datos {
+            height: 97.5%;
+            padding-top: 3%;
+        }
+        &__nombre {
+            margin-bottom: 4px
+        }
+        &__puesto {
+            font-size: 18px;
+            margin-top: 4px;
+            font-family: TommyMedium;
+        } 
+        &__link {
+            font-size: 25px;
+        }
+        &__li {
+            padding: 5px;
+            border-radius: 100%;
+            line-height: 3.5vh;
+          
+        }
+    }
+    
+}
+@media screen and (max-width:459px) and (min-width:0px){
+    .personas {
+        flex-direction: column;
+        align-items: center ;
+    }
+    .tarjeta {
+        box-sizing: content-box;
+        width: $altoTarjeta*0.7;
+        height: $anchoTarjeta*0.7;
+        margin:8px;
+        background-color: $color-persona;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        box-shadow: 0px 0px 5px 3px rgba(59, 47, 47, 0.589);
+        &__imagen {
+            width: auto;
+            height: 94%;
+            margin:2%;
+        }
+        &__datos {
+            width: 100%;
+            height: 97%;
+            padding-top: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__nombre {
+            font-family: big_noodle_titling;
+            margin-bottom: 4px
+        }
+        &__puesto {
+            font-size: 10px;
+            margin-top: 2px;
+        } 
+        &__link {
+            width: 100%;
+            text-decoration: none;
+            background-color: $color-nav;
+            color: rgb(6, 10, 15);
+            text-align: center;
+            font-size: 18px;
+            &:hover {
+                color: $color-contenidoFooter;
+                background-color: $color-btnCliente;
+            }
+        }
+        &__listado {
+            margin-bottom: 8px;
+            margin-top: 8px;
+        }
+        &__li {
+            cursor: pointer;
+            border: 1px solid $color-conocenos;
+            background-color: $color-persona;
+            padding: 5px;
+            border-radius: 100%;
+            height: 100%;
+            line-height: 3.5vh;
+            &:hover {
+                border: 1px solid $color-subtitulo;
+                background-color: $color-conocenos;
+            }
+            
+        }
+        &__ahref {
+            text-decoration: none;
         }
     }
 }

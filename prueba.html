@@ -4,21 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Iconos/fonts.css">
     <title>Document</title>
     <style>
-      @font-face {
-          font-family:chrisMaster ;
-          src: url(Fuentes/chrisMaster.ttf);
-      }  
-      h1 {
-          font-family: chrisMaster;
-      }
+        * {
+            padding:0%;
+            margin: 0%;
+        }
+        .parallax {
+            
+            background-color: lightseagreen no-repeat fixed 50% 50%;
+            background-size: cover ;
+        }
+        #seccion1 {
+            background-image: url('Imagenes/fondo-conocenos2.jpg');
+            width: 100%;
+            height: 80vh;
+        }
+        #seccion2 {
+            background-image: url('Imagenes/banner_macanas.jpg');
+            width: 100%;
+            height: 80vh;
+        }
+        #seccion3 {
+            background-image: url('Imagenes/Clientesfondo.jpeg');
+            width: 100%;
+            height: 80vh;
+        }
     </style>
 </head>
 
 <body>
-    <h1>
-        HOLAS MUNDO
-    </h1>
+
+    <div class="parallax" id="seccion1">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat facere repellendus, animi et non incidunt, dolorem ad odio eaque saepe iusto temporibus nesciunt consequatur, enim accusamus ipsum nihil molestias suscipit.</p>
+    </div>
+    <div class="parallax" id="seccion2">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat facere repellendus, animi et non incidunt, dolorem ad odio eaque saepe iusto temporibus nesciunt consequatur, enim accusamus ipsum nihil molestias suscipit.</p>
+    </div>
+    <div class="parallax" id="seccion3">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat facere repellendus, animi et non incidunt, dolorem ad odio eaque saepe iusto temporibus nesciunt consequatur, enim accusamus ipsum nihil molestias suscipit.</p>
+    </div>
+    
 </body>
 </html>
