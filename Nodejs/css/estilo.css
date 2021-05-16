@@ -43,7 +43,7 @@
       height: 80vh;
       padding: 0rem;
       padding-top: 3vh;
-      background: url(../../../Imagenes/fondo-conocenos2.jpg);
+      background: url(../../Imagenes/fondo-conocenos2.jpg);
       background-size: cover;
       background-repeat: no-repeat;
       display: flex;
@@ -713,7 +713,7 @@ body#video {
   padding-bottom: 40px; }
 
 .videosContenedor {
-  background: url(../../../Imagenes/fondo2.jpg);
+  background: url(../../Imagenes/fondo2.jpg);
   width: 100%;
   height: max-content;
   padding: 8px;
@@ -786,7 +786,7 @@ body#video {
   padding: 1.5vw;
   display: flex;
   flex-direction: row;
-  background-image: url(../../../Imagenes/fondo3.jpg);
+  background-image: url(../../Imagenes/fondo3.jpg);
   background-repeat: repeat;
   border: rgba(250, 227, 246, 0.582) solid 2px;
   border-left: 0px;
