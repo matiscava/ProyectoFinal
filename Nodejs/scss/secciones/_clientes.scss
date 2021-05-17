@@ -38,16 +38,12 @@
             
             &--dosMundos {
                 @include cuadroCliente (0,dosMundos);
-                //background-image: url("../../Imagenes/banner_dosMundos.jfif");
             }
             &--macanas {
-                @include cuadroCliente (2,macanas);
-                //background-image: url("../../Imagenes/banner_macanas.jpg");
-              
+                @include cuadroCliente (2,macanas);  
             }
             &--antiPasto {
                 @include cuadroCliente(1,antipasto);
-               // background-image: url("../../Imagenes/banner_antipasto.jpg");
             }
     }
 

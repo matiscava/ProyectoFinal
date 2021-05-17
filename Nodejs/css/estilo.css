@@ -1334,34 +1334,3 @@ body {
 
 .cuestionario {
   color: #b7c25a; }
-
-/**
-div {
-    background-color: blue;
-    height: 40vh;
-    ul {
-        list-style: none;
-        margin:0;
-        padding: 0;
-        background-color:red ;
-        height: 20vh;       
-        display: flex;
-        li {
-            font-size: 3vh;
-            color: royalblue;
-            font-family:'Courier New', Courier, monospace ;
-        }
-    }
-    p {
-        font-size: 6vh;
-        color:saddlebrown;
-        background-color: seagreen;
-        font-family: 'Times New Roman', Times, serif;
-    }
-}
-h1{
-    color:$ColorTitulo;
-}
-h3{ 
-    color:$ColorTitulo;
-}**/

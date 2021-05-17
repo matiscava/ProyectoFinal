@@ -32,12 +32,6 @@ footer {
         margin-bottom: 0 ; 
         margin-top: 0;
         font-size: $tamanoTextoFooter;
-        // &:hover {
-        //     color: lightcoral;
-        // }
-        // &:hover ~ .pieDePagina__logo {
-        //     color: lightcoral ;
-        // }
     }
 
     &__logo {
@@ -45,14 +39,6 @@ footer {
         width: auto; 
         height: $tamanoTextoFooter*1.2;
         color: $color-contenidoFooter;
-        // &:hover{
-        //     color: lightcoral;
-        // }
-        // &:hover ~ .pieDePagina__texto {
-        //     color: lightcoral;
-        // }
-        // line-height: $tamanoTextoFooter*1.2;
-
     }
     &__contenedor:hover {
         .pieDePagina__logo , .pieDePagina__texto {

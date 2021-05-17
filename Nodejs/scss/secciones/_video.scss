@@ -1,8 +1,5 @@
 body#video {
     padding-top: 80px;
-    // nav.menu{
-    //     animation: animacion2 5s;
-    // }
     h2.subtitulo {
         margin-top: 4vh;
         margin-bottom: 6vh;
@@ -36,14 +33,10 @@ body#video {
 .menuVideos {
     padding-top: 21px;
     background-color: #2e6455ed;
-    box-shadow: 0 0 10px 10px #00000065 ;
-    //animation: animacionVideo 5s; 
+    box-shadow: 0 0 10px 10px #00000065 ; 
 }
 
 .enlase {
-    
-    //border-bottom: 1px brown solid;
-    //background-color: white;
     &__listado {
         list-style: none;
         margin-left: 5vw;
@@ -104,7 +97,6 @@ body#video {
     padding: 1.5vw;
     display: flex;
     flex-direction: row;
-    // background:$color-cuadro;
     background-image: url(../../Imagenes/fondo3.jpg);
     background-repeat: repeat;
     border: rgba(250, 227, 246, 0.582) solid 2px;
